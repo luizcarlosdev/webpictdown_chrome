@@ -1,0 +1,11 @@
+{
+	"name":"WebPictDown",
+	"version":"0.0.1",
+	"description":"Set a pattern to save files from web in a simple way",
+	"browser_action":{
+		"default_popup":"index.html"
+	},
+
+	"manifest_version":2
+
+}
