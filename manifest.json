@@ -2,10 +2,26 @@
 	"name":"WebPictDown",
 	"version":"0.0.1",
 	"description":"Set a pattern to save files from web in a simple way",
-	"browser_action":{
-		"default_popup":"index.html"
+	"manifest_version": 3,
+	"permissions": ["storage", "activeTab", "scripting"],
+	"options_page": "options.html",
+	"action": {
+		"default_popup":"index.html",
+		"default_icon": {
+			"16": "/images/get_started16.png",
+			"32": "/images/get_started32.png",
+			"48": "/images/get_started48.png",
+			"128": "/images/get_started128.png"
+		}
 	},
-
-	"manifest_version":2
-
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "/images/get_started16.png",
+		"32": "/images/get_started32.png",
+		"48": "/images/get_started48.png",
+		"128": "/images/get_started128.png"
+	},
+	"author": "Luiz Carlos Dev"
 }
